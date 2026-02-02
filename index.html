@@ -4,55 +4,60 @@
   <meta charset="UTF-8">
   <title>Be My Valentine 💖</title>
   <style>
-    body {
-      background-color: #fce4ec;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
+  body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
 
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 20px;
-      text-align: center;
-      width: 300px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
+    /* IMAGE PLEIN ÉCRAN */
+    background: url("https://www.kate.net/holidays/valentine/images/katenet_valentinesday2012a_1920x1080.jpg")
+                no-repeat center center;
+    background-size: cover;
 
-    h1 {
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
+  .card {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
 
-    #yes {
-      background-color: #ff4081;
-      color: white;
-      margin-right: 10px;
-    }
+  h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 
-    #no {
-      background-color: #e0e0e0;
-      position: absolute;
-    }
-  </style>
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #yes {
+    background-color: #ff4081;
+    color: white;
+    margin-right: 10px;
+  }
+
+  #no {
+    background-color: #e0e0e0;
+    position: absolute;
+  }
+</style>
+
 </head>
 <body>
 
   <div class="card">
     <h1>💌 Will you be my Valentine ?</h1>
-    <img src="https://www.kate.net/holidays/valentine/images/katenet_valentinesday2012a_1920x1080.jpg" alt="love" width="1000">
     <button id="yes" onclick="yesClicked()">Yes</button>
     <button id="no" onmouseover="moveNo()">No</button>
   </div>
